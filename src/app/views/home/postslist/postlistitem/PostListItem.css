@@ -1,0 +1,21 @@
+.itemListPost{
+    display:flex;
+    background-color: #5e32a8;
+    align-items: center;
+    flex-direction: column;
+    margin: 4px;
+    border-radius: 10px;
+    box-shadow: 3px 3px #411d80;
+}
+
+.itemListPost:hover{
+    background-color: #a574fa;
+}
+
+.titlePost{
+    font-size: large;
+}
+
+.descriptionPost{
+    font-size: medium;
+}
