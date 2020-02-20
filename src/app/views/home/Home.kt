@@ -26,12 +26,12 @@ class Home : RComponent<RProps, IdState>(),OnClickPost {
     }
 
     override fun RBuilder.render() {
-        div("app") {
+        div("home") {
             profileBar(
                 ProfileData(
                     "Full Name",
                     "Descripcion",
-                    "",
+                    "https://i.postimg.cc/qtMKQ920/orange-tabby-cat-near-window-2071873.jpg",
                     ""
                 )
             )
