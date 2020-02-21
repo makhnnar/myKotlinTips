@@ -5,6 +5,50 @@
     min-width: 100vw;
     justify-content: space-around;
     align-items: center;
+
+    padding: 0;
+
+    overflow: hidden;
+  
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    
+    background-color: #f5f5f5;
+    color: #000000;
+    
+    transition: background-color .3s;
+}
+
+.profileBar:hover, .itemListPost:focus {
+    background-color: #e0e0e0;
+}
+
+.profileBar:before {
+    content: "";
+
+    position: absolute;
+
+    width: 0%;
+    height: 0%;
+    max-width: 100%;
+    max-height: 10%;
+      
+    border-radius: 10%;
+    
+    background-color: rgba(236, 240, 241, .3);
+}
+  
+.profileBar:active:before {
+    width: 100%;
+    padding-top: 25%;
+    transition: width .2s ease-out, padding-top .2s ease-out;
+}
+  
+/* Styles, not important */
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 #imgProfile{
@@ -12,3 +56,4 @@
     height: 200px;
     width: 200px;
 }
+
