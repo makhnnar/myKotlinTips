@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1757483-ce33-4c0f-ba9e-a18d7f5eca5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/views/home/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/Home.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,15 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="App.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/App.kt">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,11 +37,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/App.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostListItem.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -67,26 +67,26 @@
       <file leaf-file-name="Home.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/Home.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileBar.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileBar.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
+      <file leaf-file-name="PostsList.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="220">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostListData.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListData.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -118,15 +118,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListData.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileData.kt" />
-        <option value="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/postslist/PostsList.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css" />
         <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" />
         <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" />
-        <option value="$PROJECT_DIR$/src/app/views/home/Home.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/Home.css" />
         <option value="$PROJECT_DIR$/src/app/App.css" />
         <option value="$PROJECT_DIR$/src/app/App.kt" />
+        <option value="$PROJECT_DIR$/src/app/views/home/Home.kt" />
+        <option value="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt" />
       </list>
     </option>
   </component>
@@ -148,6 +148,51 @@
             <path>
               <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
               <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="postslist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="postslist" type="462c0819:PsiDirectoryNode" />
+              <item name="postlistitem" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +309,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32912844" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28606158" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28606158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -371,28 +416,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logo/Logo.kt" />
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -489,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="1122">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -515,13 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/Home.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index/index.kt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -542,6 +559,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/Home.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
     </entry>

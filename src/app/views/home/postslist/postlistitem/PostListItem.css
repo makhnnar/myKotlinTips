@@ -5,7 +5,6 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-    justify-content:space-around;
     margin: 30px auto;
     padding: 0;
   
@@ -54,10 +53,26 @@
     box-sizing: border-box;
 }
 
-.titlePost{
-    font-size: large;
+.titlePhotoItemListPost{
+    position: relative;
+    height: 50%;
+    width: 100%;
 }
 
-.descriptionPost{
+
+#imgItemListPost{
+    width: 100%;
+    height: 100% auto;
+    opacity: 0.5;
+}
+
+.titleItemListPost{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.descriptionItemListPost{
     font-size: medium;
 }

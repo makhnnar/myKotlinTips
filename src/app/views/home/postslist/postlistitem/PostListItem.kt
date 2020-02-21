@@ -1,9 +1,11 @@
 package app.views.home.postslist.postlistitem
 
+import kotlinx.html.id
 import kotlinx.html.js.onClickFunction
 import react.RBuilder
 import react.dom.div
 import react.dom.h3
+import react.dom.img
 import react.dom.p
 
 fun RBuilder.postListItem(
@@ -12,11 +14,21 @@ fun RBuilder.postListItem(
 ) {
     div("itemListPost") {
 
-        h3("titlePost") {
-            +postListData.title
+        div("titlePhotoItemListPost") {
+
+            img {
+                attrs{
+                    id = "imgItemListPost"
+                    src = postListData.photo
+                }
+            }
+
+            h3("titleItemListPost") {
+                +postListData.title
+            }
         }
 
-        p("descriptionPost") {
+        p("descriptionItemListPost") {
             +postListData.description
         }
 

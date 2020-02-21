@@ -44,19 +44,19 @@ class Home : RComponent<RProps, IdState>(),OnClickPost {
                         "1",
                         "title1",
                         "descripcion1",
-                        "photo1"
+                        "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
                     ),
                     PostListData(
                         "2",
                         "title2",
                         "descripcion2",
-                        "photo2"
+                        "https://i.postimg.cc/Hnby32Pv/1517151881-149-15-perritos-que-fueron-premiados-por-su-belleza-c.jpg"
                     ),
                     PostListData(
                         "3",
                         "title3",
                         "descripcion3",
-                        "photo3"
+                        "https://i.postimg.cc/Qt27pPSW/pajarito.jpg"
                     )
                 ),
                 this@Home
