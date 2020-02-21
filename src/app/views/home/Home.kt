@@ -51,6 +51,12 @@ class Home : RComponent<RProps, IdState>(),OnClickPost {
                         "title2",
                         "descripcion2",
                         "photo2"
+                    ),
+                    PostListData(
+                        "3",
+                        "title3",
+                        "descripcion3",
+                        "photo3"
                     )
                 ),
                 this@Home
