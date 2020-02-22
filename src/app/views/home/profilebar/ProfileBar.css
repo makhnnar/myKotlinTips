@@ -21,39 +21,20 @@
     transition: background-color .3s;
 }
 
-.profileBar:hover, .itemListPost:focus {
-    background-color: #e0e0e0;
-}
-
-.profileBar:before {
-    content: "";
-
-    position: absolute;
-
-    width: 0%;
-    height: 0%;
-    max-width: 100%;
-    max-height: 10%;
-      
-    border-radius: 10%;
-    
-    background-color: rgba(236, 240, 241, .3);
-}
-  
-.profileBar:active:before {
-    width: 100%;
-    padding-top: 25%;
-    transition: width .2s ease-out, padding-top .2s ease-out;
-}
-  
-/* Styles, not important */
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
 #imgProfile{
     border-radius: 100%;
     height: 200px;
     width: 200px;
 }
 
+#imgSocial{
+    width: 50px;
+    height: auto;
+    opacity: 0.5;
+}
+
+#imgSocial:hover{
+    background-color: #ffffff;
+    border-radius: 6px;
+    opacity: 1.0;
+}

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1757483-ce33-4c0f-ba9e-a18d7f5eca5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" afterDir="false" />
     </list>
@@ -18,8 +17,8 @@
       <file leaf-file-name="index.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index/index.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="154">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding>
                 <element signature="e#15#92#0" expanded="true" />
               </folding>
@@ -27,20 +26,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileBar.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProfileBar.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="43" selection-start-line="43" selection-end-line="44" />
+            <state relative-caret-position="1110">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+              <folding>
+                <element signature="e#35#236#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileBar.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dom.kjsm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/@jetbrains/kotlin-react-dom/build/classes/main/kotlin-react-dom/react/dom/dom.kjsm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileBar.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+            <state relative-caret-position="476">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -48,15 +59,6 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index/index.css">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="PostListItem.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file leaf-file-name="Home.kt" pinned="false" current-in-tab="false">
@@ -77,18 +79,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsList.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="PostListItem.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="160">
+              <caret line="67" column="17" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="67" selection-end-column="17" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostsList.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Home.css" pinned="false" current-in-tab="false">
@@ -125,8 +127,8 @@
         <option value="$PROJECT_DIR$/src/app/App.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/Home.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt" />
-        <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" />
         <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" />
+        <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" />
       </list>
     </option>
   </component>
@@ -141,24 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="my-app-kotlin" type="58d84e3e:PackageViewProjectNode" />
-              <item name="my-app-kotlin" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="my-app-kotlin" type="58d84e3e:PackageViewProjectNode" />
-              <item name="my-app-kotlin" type="616d4139:PackageViewModuleNode" />
-              <item name="app" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,12 +183,49 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="postslist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="postslist" type="462c0819:PsiDirectoryNode" />
+              <item name="postlistitem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myKotlinTips" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myKotlinTips" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="profilebar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="my-app-kotlin" type="58d84e3e:PackageViewProjectNode" />
+              <item name="my-app-kotlin" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="my-app-kotlin" type="58d84e3e:PackageViewProjectNode" />
+              <item name="my-app-kotlin" type="616d4139:PackageViewModuleNode" />
+              <item name="app" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Unknown.Debug in Chrome1183989080">
+  <component name="RunManager" selected="Unknown.Debug in Chrome19982474">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -284,7 +305,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="1000" extended-state="6" />
+    <frame x="-1" y="-1" width="1282" height="1005" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -293,18 +315,18 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32796317" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32796317" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29578605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3006483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -427,13 +449,6 @@
         <state relative-caret-position="-396" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@jetbrains/kotlin-react-dom/build/classes/main/kotlin-react-dom/react/dom/dom.kjsm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -517,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -537,9 +545,6 @@
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/Home.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -560,25 +565,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index/index.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="154">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
           <folding>
             <element signature="e#15#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
+    <entry file="file://$PROJECT_DIR$/node_modules/@jetbrains/kotlin-react-dom/build/classes/main/kotlin-react-dom/react/dom/dom.kjsm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+        <state relative-caret-position="380">
+          <caret line="143" column="33" selection-start-line="143" selection-start-column="33" selection-end-line="143" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="43" selection-start-line="43" selection-end-line="44" />
+        <state relative-caret-position="1110">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="e#35#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="67" column="17" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="67" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
         </state>
       </provider>
     </entry>
