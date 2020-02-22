@@ -29,8 +29,8 @@
       <file leaf-file-name="ProfileBar.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+            <state relative-caret-position="222">
+              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
               <folding>
                 <element signature="e#35#236#0" expanded="true" />
               </folding>
@@ -50,8 +50,17 @@
       <file leaf-file-name="ProfileBar.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+            <state relative-caret-position="234">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileData.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileData.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -70,20 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostsList.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PostListItem.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="67" column="17" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="67" selection-end-column="17" />
+            <state relative-caret-position="292">
+              <caret line="73" column="15" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="73" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -413,13 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/logo/Logo.kt" />
     <entry file="file://$PROJECT_DIR$/src/ticker/Ticker.kt" />
     <entry file="file://$PROJECT_DIR$/node_modules/kotlinx-html/kotlinx-html-js/kotlinx/html/html.kjsm">
@@ -580,30 +573,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+        <state relative-caret-position="222">
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
           <folding>
             <element signature="e#35#236#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="67" column="17" lean-forward="true" selection-start-line="64" selection-start-column="4" selection-end-line="67" selection-end-column="17" />
+        <state relative-caret-position="292">
+          <caret line="73" column="15" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="73" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        <state relative-caret-position="234">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
         </state>
       </provider>
     </entry>

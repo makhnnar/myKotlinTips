@@ -40,53 +40,52 @@ fun RBuilder.profileBar(
         p {
             +profileData.description
         }
-        img {
-            attrs{
-                src = linkedInLogo
-                id = "imgSocial"
-                onClickFunction = {
-                    window.open(
-                            "https://www.linkedin.com/in/pedro-gomez-736b08145/",
-                            "_blank"
-                    )
+        div("socialContainer") {
+            img {
+                attrs{
+                    src = linkedInLogo
+                    onClickFunction = {
+                        window.open(
+                                "https://www.linkedin.com/in/pedro-gomez-736b08145/",
+                                "_blank"
+                        )
+                    }
+                }
+            }
+            img {
+                attrs{
+                    src = githubLogo
+                    onClickFunction = {
+                        window.open(
+                                "https://github.com/makhnnar",
+                                "_blank"
+                        )
+                    }
+                }
+            }
+            img {
+                attrs{
+                    src = twitterLogo
+                    onClickFunction = {
+                        window.open(
+                                "https://twitter.com/phgomez674",
+                                "_blank"
+                        )
+                    }
+                }
+            }
+            img {
+                attrs{
+                    src = icons8Logo
+                    onClickFunction = {
+                        window.open(
+                                "https://icons8.com",
+                                "_blank"
+                        )
+                    }
                 }
             }
         }
-        img {
-            attrs{
-                src = githubLogo
-                id = "imgSocial"
-                onClickFunction = {
-                    window.open(
-                            "https://github.com/makhnnar",
-                            "_blank"
-                    )
-                }
-            }
-        }
-        img {
-            attrs{
-                src = twitterLogo
-                id = "imgSocial"
-                onClickFunction = {
-                    window.open(
-                            "https://twitter.com/phgomez674",
-                            "_blank"
-                    )
-                }
-            }
-        }
-        img {
-            attrs{
-                src = icons8Logo
-                id = "imgSocial"
-                onClickFunction = {
-                    window.open(
-                            "https://icons8.com",
-                            "_blank"
-                    )
-                }
-            }
-        }
+
     }
 }
