@@ -9,8 +9,6 @@ import react.dom.img
 import react.dom.p
 import kotlin.browser.window
 
-//todo: put this link on the footer <a target="_blank" href="https://icons8.com/icons/set/linkedin">LinkedIn icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-
 @JsModule("src/app/views/home/profilebar/icons8-linkedin-out.svg")
 external val linkedInLogo: dynamic
 
@@ -23,6 +21,9 @@ external val twitterLogo: dynamic
 @JsModule("src/app/views/home/profilebar/icons8-icons8.svg")
 external val icons8Logo: dynamic
 
+@JsModule("src/app/views/home/profilebar/photo-profile.jpg")
+external val profilePhoto: dynamic
+
 
 fun RBuilder.profileBar(
         profileData: ProfileData
@@ -31,7 +32,7 @@ fun RBuilder.profileBar(
         img {
             attrs{
                 id = "imgProfile"
-                src = profileData.photo
+                src = profilePhoto
             }
         }
         p {

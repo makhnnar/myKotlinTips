@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1757483-ce33-4c0f-ba9e-a18d7f5eca5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileBar.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProfileBar.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+            <state relative-caret-position="208">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#35#236#0" expanded="true" />
               </folding>
@@ -47,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileBar.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProfileBar.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="102">
               <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
             </state>
           </provider>
@@ -127,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/app/App.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/Home.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.kt" />
-        <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css" />
+        <option value="$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt" />
       </list>
     </option>
   </component>
@@ -576,23 +575,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/PostsList.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
-          <folding>
-            <element signature="e#35#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostListItem.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -602,8 +584,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="102">
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/home/profilebar/ProfileBar.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#35#236#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
