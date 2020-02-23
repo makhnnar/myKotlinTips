@@ -1,28 +1,23 @@
 package app.views.home
 
 import app.views.home.postslist.postlistitem.OnClickPost
-import app.views.home.postslist.postlistitem.PostListData
+import app.views.home.postslist.postlistitem.PostItemData
 import app.views.home.postslist.postsList
 import app.views.home.profilebar.ProfileData
 import app.views.home.profilebar.profileBar
 import react.*
 import react.dom.*
 
-interface IdState : RState {
+interface HomeProps : RProps {
     var idToShow: String
+    var onClickPost: OnClickPost
 }
 
-class Home : RComponent<RProps, IdState>(),OnClickPost {
+class Home : RComponent<HomeProps, RState>(){
 
-
-    override fun IdState.init(props: RProps) {
-
-    }
 
     override fun componentDidMount() {
-        setState {
-            idToShow = "Presione uno por favor"
-        }
+
     }
 
     override fun RBuilder.render() {
@@ -36,40 +31,40 @@ class Home : RComponent<RProps, IdState>(),OnClickPost {
                 )
             )
             p {
-                +"Haz Clickeado el id: ${state.idToShow}"
+                +"Haz Clickeado el id: ${props.idToShow}"
             }
             postsList(
                 listOf(
-                    PostListData(
+                    PostItemData(
                         "1",
                         "title1",
                         "descripcion1",
                         "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
                     ),
-                    PostListData(
+                    PostItemData(
                         "2",
                         "title2",
                         "descripcion2",
                         "https://i.postimg.cc/Hnby32Pv/1517151881-149-15-perritos-que-fueron-premiados-por-su-belleza-c.jpg"
                     ),
-                    PostListData(
+                    PostItemData(
                         "3",
                         "title3",
                         "descripcion3",
                         "https://i.postimg.cc/Qt27pPSW/pajarito.jpg"
                     )
                 ),
-                this@Home
+                props.onClickPost
             )
-        }
-    }
-
-    override fun goToPostDetail(postListData: PostListData) {
-        setState{
-            idToShow = postListData.id
         }
     }
 
 }
 
-fun RBuilder.home() = child(Home::class) {}
+fun RBuilder.home(
+        idToShow: String,
+        onClickPost: OnClickPost
+) = child(Home::class) {
+    attrs.idToShow = idToShow
+    attrs.onClickPost = onClickPost
+}

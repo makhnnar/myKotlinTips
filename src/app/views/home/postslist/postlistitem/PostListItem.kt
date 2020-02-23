@@ -9,7 +9,7 @@ import react.dom.img
 import react.dom.p
 
 fun RBuilder.postListItem(
-        postListData: PostListData,
+        postItemData: PostItemData,
         onClickPost: OnClickPost
 ) {
     div("itemListPost") {
@@ -19,22 +19,22 @@ fun RBuilder.postListItem(
             img {
                 attrs{
                     id = "imgItemListPost"
-                    src = postListData.photo
+                    src = postItemData.photo
                 }
             }
 
             h3("titleItemListPost") {
-                +postListData.title
+                +postItemData.title
             }
         }
 
         p("descriptionItemListPost") {
-            +postListData.description
+            +postItemData.description
         }
 
         attrs{
             onClickFunction = {
-                onClickPost.goToPostDetail(postListData)
+                onClickPost.goToPostDetail(postItemData)
             }
         }
     }
@@ -42,6 +42,6 @@ fun RBuilder.postListItem(
 
 interface OnClickPost {
 
-    fun goToPostDetail(postListData: PostListData)
+    fun goToPostDetail(postItemData: PostItemData)
 
 }
