@@ -7,11 +7,11 @@ import react.RBuilder
 import react.dom.div
 
 fun RBuilder.postsList(
-        postsItem: List<PostItemData>,
+        postsItems: List<PostItemData>,
         onClickPost: OnClickPost
 ) {
     div("listPost") {
-        postsItem.map {
+        postsItems.map {
             postListItem(it,onClickPost)
         }
     }
