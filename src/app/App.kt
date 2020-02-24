@@ -1,7 +1,6 @@
 package app
 
 import app.views.home.home
-import app.views.home.postslist.postlistitem.OnClickPost
 import app.views.home.postslist.postlistitem.PostItemData
 import app.views.postdetail.postDetail
 import react.*
@@ -12,11 +11,14 @@ import react.router.dom.switch
 const val DETAIL_PATH = "/postDetail"
 
 interface IdState : RState {
-    var idToShow: String
     var listPost: List<PostItemData>
 }
 
-class App : RComponent<RProps, IdState>(), OnClickPost {
+interface RoutePostDetailProps : RProps {
+    var idPost :String
+}
+
+class App : RComponent<RProps, IdState>() {
 
 
     override fun IdState.init(props: RProps) {
@@ -53,25 +55,18 @@ class App : RComponent<RProps, IdState>(), OnClickPost {
             switch {
                 route("/", exact = true) {
                     home(
-                            state.listPost,
-                            this@App
+                        state.listPost
                     )
                 }
-                route(DETAIL_PATH) {
-                    postDetail(
-                        state.listPost.first{ it.id == state.idToShow }
+                route<RoutePostDetailProps>("$DETAIL_PATH/:idPost") {
+                    props -> postDetail(
+                        state.listPost.first{ it.id == props.match.params.idPost }
                     )
                 }
             }
         }
 
 
-    }
-
-    override fun goToPostDetail(postItemData: PostItemData) {
-        setState{
-            idToShow = postItemData.id
-        }
     }
 
 }

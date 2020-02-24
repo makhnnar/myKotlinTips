@@ -1,5 +1,6 @@
 package app.views.home.postslist.postlistitem
 
+import app.DETAIL_PATH
 import kotlinx.html.id
 import kotlinx.html.js.onClickFunction
 import react.RBuilder
@@ -7,10 +8,10 @@ import react.dom.div
 import react.dom.h3
 import react.dom.img
 import react.dom.p
+import kotlin.browser.window
 
 fun RBuilder.postListItem(
-        postItemData: PostItemData,
-        onClickPost: OnClickPost
+        postItemData: PostItemData
 ) {
     div("itemListPost") {
 
@@ -34,14 +35,8 @@ fun RBuilder.postListItem(
 
         attrs{
             onClickFunction = {
-                onClickPost.goToPostDetail(postItemData)
+                window.location.href = "$DETAIL_PATH/${postItemData.id}"
             }
         }
     }
-}
-
-interface OnClickPost {
-
-    fun goToPostDetail(postItemData: PostItemData)
-
 }

@@ -1,13 +1,15 @@
 package app.views.postdetail
 
-import app.views.home.postslist.postlistitem.OnClickPost
 import app.views.home.postslist.postlistitem.PostItemData
+import kotlinx.html.id
 import react.RBuilder
 import react.RComponent
 import react.RProps
 import react.RState
 import react.dom.div
 import react.dom.h1
+import react.dom.img
+import react.router.dom.BrowserRouterComponent
 
 
 interface PostDetailProps : RProps {
@@ -23,8 +25,18 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
 
     override fun RBuilder.render() {
         div("postDetail") {
+
+            img {
+                attrs{
+                    id = "imgItemListPost"
+                    src = props.postItemData.photo
+                }
+            }
             h1 {
                 +props.postItemData.title
+            }
+            h1 {
+                +props.postItemData.description
             }
         }
     }

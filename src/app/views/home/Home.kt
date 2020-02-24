@@ -1,6 +1,5 @@
 package app.views.home
 
-import app.views.home.postslist.postlistitem.OnClickPost
 import app.views.home.postslist.postlistitem.PostItemData
 import app.views.home.postslist.postsList
 import app.views.home.profilebar.ProfileData
@@ -10,7 +9,6 @@ import react.dom.*
 
 interface HomeProps : RProps {
     var postsItems: List<PostItemData>
-    var onClickPost: OnClickPost
 }
 
 class Home : RComponent<HomeProps, RState>(){
@@ -31,8 +29,7 @@ class Home : RComponent<HomeProps, RState>(){
                     )
             )
             postsList(
-                    props.postsItems,
-                    props.onClickPost
+                    props.postsItems
             )
         }
     }
@@ -40,9 +37,7 @@ class Home : RComponent<HomeProps, RState>(){
 }
 
 fun RBuilder.home(
-        postsItems: List<PostItemData>,
-        onClickPost: OnClickPost
+        postsItems: List<PostItemData>
 ) = child(Home::class) {
     attrs.postsItems = postsItems
-    attrs.onClickPost = onClickPost
 }

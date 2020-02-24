@@ -1,0 +1,6 @@
+.postDetail{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+}
