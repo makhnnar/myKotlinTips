@@ -1,6 +1,7 @@
 package app.views.postdetail
 
 import app.views.home.postslist.postlistitem.PostItemData
+import app.views.postdetail.titlepostbar.titlePostBar
 import kotlinx.html.id
 import react.RBuilder
 import react.RComponent
@@ -24,6 +25,7 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
     }
 
     override fun RBuilder.render() {
+        titlePostBar()
         div("postDetail") {
 
             img {

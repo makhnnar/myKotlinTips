@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .titlePostBar {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .titlePostBar a {
+    margin-right: 10px;
+}
+
+nav .titlePostBar img {
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
