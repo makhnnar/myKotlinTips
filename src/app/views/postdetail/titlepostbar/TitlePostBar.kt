@@ -18,6 +18,9 @@ external val icons8Logo: dynamic
 
 fun RBuilder.titlePostBar() {
     header {
+        h3 {
+            +"My gooof"
+        }
         nav {
             ul ("titlePostBar"){
                 socialButton(
