@@ -1,0 +1,20 @@
+.socialGroupButtons {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex:3 3;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialGroupButtons a {
+    margin-right: 10px;
+}
+
+.socialGroupButtons img {
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
