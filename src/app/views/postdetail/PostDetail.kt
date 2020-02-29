@@ -1,12 +1,9 @@
 package app.views.postdetail
 
-import app.views.home.postslist.postlistitem.PostItemData
+import app.views.home.postslist.postlistitem.*
 import app.views.postdetail.titlepostbar.titlePostBar
 import kotlinx.html.id
-import react.RBuilder
-import react.RComponent
-import react.RProps
-import react.RState
+import react.*
 import react.dom.div
 import react.dom.h1
 import react.dom.img
@@ -25,25 +22,26 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
     }
 
     override fun RBuilder.render() {
-        titlePostBar()
+        titlePostBar(props.postItemData.title)
         div("postDetail") {
+            props.postItemData.content.map {
+                when(it){
+                    is ImgElment ->{
 
-            img {
-                attrs{
-                    id = "imgItemListPost"
-                    src = props.postItemData.photo
+                    }
+                    is H1Elment -> {
+
+                    }
+                    is PElment -> {
+
+                    }
                 }
-            }
-            h1 {
-                +props.postItemData.title
-            }
-            h1 {
-                +props.postItemData.description
             }
         }
     }
 
 }
+
 
 fun RBuilder.postDetail(
         postItemData: PostItemData

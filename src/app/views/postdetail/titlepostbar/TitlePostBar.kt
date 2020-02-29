@@ -21,10 +21,10 @@ external val icons8Logo: dynamic
  *todo:put classes on nav for to add styles and fix positions on screen
  * */
 
-fun RBuilder.titlePostBar() {
+fun RBuilder.titlePostBar(title:String) {
     header {
         h3 {
-            +"My gooof"
+            +title
         }
         nav {
             socialGroupButtons()

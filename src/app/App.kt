@@ -1,6 +1,7 @@
 package app
 
 import app.views.home.home
+import app.views.home.postslist.postlistitem.ElementData
 import app.views.home.postslist.postlistitem.PostItemData
 import app.views.postdetail.postDetail
 import react.*
@@ -32,19 +33,61 @@ class App : RComponent<RProps, IdState>() {
                             "1",
                             "title1",
                             "descripcion1",
-                            "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
+                            "https://i.postimg.cc/tCHPJKYK/gatito.jpg",
+                            listOf(
+                                    ElementData.H1Elment(
+                                    "Es un titulo fabuloso"
+                                    ),
+                                    ElementData.PElment(
+                                            "Un parrafo"
+                                    ),
+                                    ElementData.PElment(
+                                            "Otro parrafo"
+                                    ),
+                                    ElementData.ImgElment(
+                                            "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
+                                    )
+                            )
                     ),
                     PostItemData(
                             "2",
                             "title2",
                             "descripcion2",
-                            "https://i.postimg.cc/Hnby32Pv/1517151881-149-15-perritos-que-fueron-premiados-por-su-belleza-c.jpg"
+                            "https://i.postimg.cc/Hnby32Pv/1517151881-149-15-perritos-que-fueron-premiados-por-su-belleza-c.jpg",
+                            listOf(
+                                    ElementData.H1Elment(
+                                            "Es un titulo fabuloso"
+                                    ),
+                                    ElementData.PElment(
+                                            "Un parrafo"
+                                    ),
+                                    ElementData.PElment(
+                                            "Otro parrafo"
+                                    ),
+                                    ElementData.ImgElment(
+                                            "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
+                                    )
+                            )
                     ),
                     PostItemData(
                             "3",
                             "title3",
                             "descripcion3",
-                            "https://i.postimg.cc/Qt27pPSW/pajarito.jpg"
+                            "https://i.postimg.cc/Qt27pPSW/pajarito.jpg",
+                            listOf(
+                                ElementData.H1Elment(
+                                        "Es un titulo fabuloso"
+                                ),
+                                ElementData.PElment(
+                                        "Un parrafo"
+                                ),
+                                ElementData.PElment(
+                                        "Otro parrafo"
+                                ),
+                                ElementData.ImgElment(
+                                        "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
+                                )
+                            )
                     )
             )
         }
