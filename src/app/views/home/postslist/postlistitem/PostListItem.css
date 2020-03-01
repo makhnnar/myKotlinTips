@@ -77,4 +77,7 @@
 
 .descriptionItemListPost{
     font-size: medium;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 16px;
 }

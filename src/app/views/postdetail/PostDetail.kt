@@ -7,6 +7,7 @@ import react.*
 import react.dom.div
 import react.dom.h1
 import react.dom.img
+import react.dom.p
 import react.router.dom.BrowserRouterComponent
 
 
@@ -27,13 +28,21 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
             props.postItemData.content.map {
                 when(it){
                     is ImgElment ->{
-
+                        img {
+                            attrs{
+                                src = it.src
+                            }
+                        }
                     }
                     is H1Elment -> {
-
+                        h1 {
+                            +it.title
+                        }
                     }
                     is PElment -> {
-
+                        p {
+                            +it.content
+                        }
                     }
                 }
             }

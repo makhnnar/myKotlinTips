@@ -1,6 +1,5 @@
 package app.views.postdetail.titlepostbar
 
-import app.views.commons.socialButton
 import app.views.commons.socialGroupButtons
 import react.RBuilder
 import react.dom.*
@@ -26,7 +25,7 @@ fun RBuilder.titlePostBar(title:String) {
         h3 {
             +title
         }
-        nav {
+        div("titlePostBar"){
             socialGroupButtons()
         }
     }

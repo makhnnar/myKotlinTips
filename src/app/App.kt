@@ -1,8 +1,7 @@
 package app
 
 import app.views.home.home
-import app.views.home.postslist.postlistitem.ElementData
-import app.views.home.postslist.postlistitem.PostItemData
+import app.views.home.postslist.postlistitem.*
 import app.views.postdetail.postDetail
 import react.*
 import react.router.dom.browserRouter
@@ -31,61 +30,61 @@ class App : RComponent<RProps, IdState>() {
             listPost = listOf(
                     PostItemData(
                             "1",
-                            "title1",
-                            "descripcion1",
+                            "Es el titulo 1",
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                             "https://i.postimg.cc/tCHPJKYK/gatito.jpg",
                             listOf(
-                                    ElementData.H1Elment(
-                                    "Es un titulo fabuloso"
+                                    H1Elment(
+                                    "Es el titulo 1"
                                     ),
-                                    ElementData.PElment(
-                                            "Un parrafo"
+                                    PElment(
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet. Sed at ultricies orci. Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper"
                                     ),
-                                    ElementData.PElment(
-                                            "Otro parrafo"
+                                    PElment(
+                                            "Phasellus placerat a massa in ullamcorper. Morbi luctus elit nibh, quis consectetur ligula gravida quis. Vestibulum in lorem non leo feugiat ultricies in nec metus. Pellentesque ac dictum nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dignissim tristique volutpat. Aliquam accumsan sapien vitae fringilla rhoncus"
                                     ),
-                                    ElementData.ImgElment(
+                                    ImgElment(
                                             "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
                                     )
                             )
                     ),
                     PostItemData(
                             "2",
-                            "title2",
-                            "descripcion2",
+                            "Es el titulo 2",
+                            "Phasellus placerat a massa in ullamcorper",
                             "https://i.postimg.cc/Hnby32Pv/1517151881-149-15-perritos-que-fueron-premiados-por-su-belleza-c.jpg",
                             listOf(
-                                    ElementData.H1Elment(
-                                            "Es un titulo fabuloso"
+                                    H1Elment(
+                                            "Es el titulo 2"
                                     ),
-                                    ElementData.PElment(
-                                            "Un parrafo"
+                                    PElment(
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet. Sed at ultricies orci. Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper"
                                     ),
-                                    ElementData.PElment(
-                                            "Otro parrafo"
+                                    PElment(
+                                            "Phasellus placerat a massa in ullamcorper. Morbi luctus elit nibh, quis consectetur ligula gravida quis. Vestibulum in lorem non leo feugiat ultricies in nec metus. Pellentesque ac dictum nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dignissim tristique volutpat. Aliquam accumsan sapien vitae fringilla rhoncus"
                                     ),
-                                    ElementData.ImgElment(
-                                            "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
+                                    ImgElment(
+                                            "https://i.postimg.cc/Hnby32Pv/1517151881-149-15-perritos-que-fueron-premiados-por-su-belleza-c.jpg"
                                     )
                             )
                     ),
                     PostItemData(
                             "3",
-                            "title3",
-                            "descripcion3",
+                            "Es el titulo 3",
+                            "Cras in tortor a sem faucibus venenatis",
                             "https://i.postimg.cc/Qt27pPSW/pajarito.jpg",
                             listOf(
-                                ElementData.H1Elment(
-                                        "Es un titulo fabuloso"
+                                H1Elment(
+                                        "Es el titulo 3"
                                 ),
-                                ElementData.PElment(
-                                        "Un parrafo"
+                                PElment(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet. Sed at ultricies orci. Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper"
                                 ),
-                                ElementData.PElment(
-                                        "Otro parrafo"
+                                PElment(
+                                        "Phasellus placerat a massa in ullamcorper. Morbi luctus elit nibh, quis consectetur ligula gravida quis. Vestibulum in lorem non leo feugiat ultricies in nec metus. Pellentesque ac dictum nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dignissim tristique volutpat. Aliquam accumsan sapien vitae fringilla rhoncus"
                                 ),
-                                ElementData.ImgElment(
-                                        "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
+                                ImgElment(
+                                        "https://i.postimg.cc/Qt27pPSW/pajarito.jpg"
                                 )
                             )
                     )
