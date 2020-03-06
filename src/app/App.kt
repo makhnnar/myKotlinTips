@@ -38,10 +38,22 @@ class App : RComponent<RProps, IdState>() {
                                     "Es el titulo 1"
                                     ),
                                     PElment(
-                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet. Sed at ultricies orci. Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper"
+                                        listOf(
+                                            StrElment("Lorem ipsum dolor sit amet,"),
+                                            BElment(" consectetur adipiscing elit."),
+                                            StrElment(" Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet."),
+                                            LinkElment("https://www.google.com","Sed at ultricies orci."),
+                                            StrElment(" Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper")
+                                        )
                                     ),
                                     PElment(
-                                            "Phasellus placerat a massa in ullamcorper. Morbi luctus elit nibh, quis consectetur ligula gravida quis. Vestibulum in lorem non leo feugiat ultricies in nec metus. Pellentesque ac dictum nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dignissim tristique volutpat. Aliquam accumsan sapien vitae fringilla rhoncus"
+                                        listOf(
+                                            StrElment("Lorem ipsum dolor sit amet,"),
+                                            BElment(" consectetur adipiscing elit."),
+                                            StrElment(" Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet."),
+                                            LinkElment("https://www.google.com","Sed at ultricies orci."),
+                                            StrElment(" Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper")
+                                        )
                                     ),
                                     ImgElment(
                                             "https://i.postimg.cc/tCHPJKYK/gatito.jpg"
@@ -58,11 +70,21 @@ class App : RComponent<RProps, IdState>() {
                                             "Es el titulo 2"
                                     ),
                                     PElment(
-                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet. Sed at ultricies orci. Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper"
-                                    ),
+                                            listOf(
+                                                    StrElment("Lorem ipsum dolor sit amet,"),
+                                                    BElment(" consectetur adipiscing elit."),
+                                                    StrElment(" Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet."),
+                                                    LinkElment("https://www.google.com","Sed at ultricies orci."),
+                                                    StrElment(" Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper")
+                                            )                                    ),
                                     PElment(
-                                            "Phasellus placerat a massa in ullamcorper. Morbi luctus elit nibh, quis consectetur ligula gravida quis. Vestibulum in lorem non leo feugiat ultricies in nec metus. Pellentesque ac dictum nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dignissim tristique volutpat. Aliquam accumsan sapien vitae fringilla rhoncus"
-                                    ),
+                                            listOf(
+                                                    StrElment(" Lorem ipsum dolor sit amet,"),
+                                                    BElment(" consectetur adipiscing elit."),
+                                                    StrElment(" Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet."),
+                                                    LinkElment("https://www.google.com","Sed at ultricies orci."),
+                                                    StrElment(" Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper")
+                                            )                                    ),
                                     ImgElment(
                                             "https://i.postimg.cc/Hnby32Pv/1517151881-149-15-perritos-que-fueron-premiados-por-su-belleza-c.jpg"
                                     )
@@ -78,11 +100,21 @@ class App : RComponent<RProps, IdState>() {
                                         "Es el titulo 3"
                                 ),
                                 PElment(
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet. Sed at ultricies orci. Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper"
-                                ),
+                                        listOf(
+                                                StrElment("Lorem ipsum dolor sit amet,"),
+                                                BElment(" consectetur adipiscing elit."),
+                                                StrElment(" Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet."),
+                                                LinkElment("https://www.google.com","Sed at ultricies orci."),
+                                                StrElment(" Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper")
+                                        )                                ),
                                 PElment(
-                                        "Phasellus placerat a massa in ullamcorper. Morbi luctus elit nibh, quis consectetur ligula gravida quis. Vestibulum in lorem non leo feugiat ultricies in nec metus. Pellentesque ac dictum nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dignissim tristique volutpat. Aliquam accumsan sapien vitae fringilla rhoncus"
-                                ),
+                                        listOf(
+                                                StrElment("Lorem ipsum dolor sit amet,"),
+                                                BElment(" consectetur adipiscing elit."),
+                                                StrElment(" Sed et odio id metus vestibulum tempus. Integer molestie risus ac est aliquet, vitae ullamcorper mi laoreet."),
+                                                LinkElment("https://www.google.com","Sed at ultricies orci."),
+                                                StrElment(" Phasellus dapibus, justo in venenatis tristique, nisi libero fringilla mi, quis laoreet elit velit in mauris. Integer placerat mollis augue, nec pellentesque neque egestas vitae. Aenean dictum lobortis nunc, a ornare mauris ultrices a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ut justo tempor, porta nibh vel, sagittis nisi. Vestibulum ac augue non massa commodo facilisis a quis sem. Suspendisse at ligula ac ipsum malesuada malesuada. Phasellus et laoreet diam. Nulla facilisis erat nec ligula fermentum ullamcorper")
+                                        )                                ),
                                 ImgElment(
                                         "https://i.postimg.cc/Qt27pPSW/pajarito.jpg"
                                 )

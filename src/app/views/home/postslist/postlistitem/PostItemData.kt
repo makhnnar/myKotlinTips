@@ -12,4 +12,7 @@ sealed class ElementData
 
 data class ImgElment(val src:String):ElementData()
 data class H1Elment(val title:String):ElementData()
-data class PElment(val content:String):ElementData()
+data class PElment(val content:List<ElementData>):ElementData()
+data class BElment(val strongText:String):ElementData()
+data class LinkElment(val link:String,val word:String):ElementData()
+data class StrElment(val str:String):ElementData()

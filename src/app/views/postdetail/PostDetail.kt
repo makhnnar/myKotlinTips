@@ -8,6 +8,8 @@ import react.dom.div
 import react.dom.h1
 import react.dom.img
 import react.dom.p
+import react.dom.b
+import react.dom.a
 import react.router.dom.BrowserRouterComponent
 
 
@@ -41,8 +43,33 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
                     }
                     is PElment -> {
                         p {
-                            +it.content
+                            it.content.map{
+                                when(it){
+                                    is BElment ->{
+                                        b {
+                                            +it.strongText
+                                        }
+                                    }
+                                    is LinkElment -> {
+                                        a(
+                                                it.link,
+                                                "_blank"
+                                        ) {
+                                            +it.word
+                                        }
+                                    }
+                                    is StrElment -> {
+                                        +it.str
+                                    }
+                                    else -> {
+
+                                    }
+                                }
+                            }
                         }
+                    }
+                    else -> {
+
                     }
                 }
             }
