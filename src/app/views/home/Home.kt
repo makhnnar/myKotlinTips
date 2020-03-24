@@ -6,6 +6,7 @@ import app.views.home.profilebar.ProfileData
 import app.views.home.profilebar.profileBar
 import react.*
 import react.dom.*
+import simpleprismcomponent.prismComponent
 
 interface HomeProps : RProps {
     var postsItems: List<PostItemData>
@@ -31,6 +32,13 @@ class Home : RComponent<HomeProps, RState>(){
             postsList(
                     props.postsItems
             )
+            p{
+                +"hola"
+            }
+            prismComponent{
+                attrs.codeToShow = "function someDemo() {\n  var test = \"Hello World!\";\n console.log(test);\n }"
+                attrs.langSintax = "jsx"
+            }
         }
     }
 

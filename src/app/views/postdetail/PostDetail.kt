@@ -13,6 +13,7 @@ import react.dom.a
 import react.router.dom.BrowserRouterComponent
 
 
+
 interface PostDetailProps : RProps {
     var postItemData: PostItemData
 }
