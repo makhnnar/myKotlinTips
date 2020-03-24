@@ -11,7 +11,7 @@ import react.dom.p
 import react.dom.b
 import react.dom.a
 import react.router.dom.BrowserRouterComponent
-
+import simpleprismcomponent.prismComponent
 
 
 interface PostDetailProps : RProps {
@@ -66,6 +66,14 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
 
                                     }
                                 }
+                            }
+                        }
+                    }
+                    is CodeElment -> {
+                        prismComponent{
+                            attrs {
+                                codeToShow = it.code
+                                langSintax = it.lang
                             }
                         }
                     }
