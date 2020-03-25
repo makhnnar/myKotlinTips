@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1757483-ce33-4c0f-ba9e-a18d7f5eca5d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/views/home/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/Home.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostItemData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostItemData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +18,8 @@
       <file leaf-file-name="Home.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/home/Home.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="572">
               <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding>
-                <element signature="e#24#289#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -59,7 +54,7 @@
       <file leaf-file-name="PostRepository.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/data/PostRepository.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="1386">
               <caret line="141" column="469" selection-start-line="141" selection-start-column="469" selection-end-line="141" selection-end-column="469" />
             </state>
           </provider>
@@ -68,8 +63,8 @@
       <file leaf-file-name="PostDetail.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/views/postdetail/PostDetail.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="342">
+              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -86,8 +81,8 @@
       <file leaf-file-name="PostDetail.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/views/postdetail/PostDetail.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="229">
+              <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="42" />
               <folding>
                 <element signature="e#30#377#0" expanded="true" />
               </folding>
@@ -157,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/app/views/commons/SocialGroupButtons.css" />
         <option value="$PROJECT_DIR$/src/app/views/postdetail/titlepostbar/TitlePostBar.css" />
         <option value="$PROJECT_DIR$/src/app/views/postdetail/titlepostbar/TitlePostBar.kt" />
-        <option value="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.css" />
         <option value="$PROJECT_DIR$/src/prismjs/index.kt" />
         <option value="$PROJECT_DIR$/node_modules/@jetbrains/kotlin-prismjs/primsjs/nonDeclarations.hooks.nonDeclarations.kt" />
         <option value="$PROJECT_DIR$/src/app/views/commons/prisimviewer/PrisimViewer.kt" />
@@ -176,8 +170,9 @@
         <option value="$PROJECT_DIR$/src/app/views/home/postslist/postlistitem/PostItemData.kt" />
         <option value="$PROJECT_DIR$/src/app/views/home/Home.kt" />
         <option value="$PROJECT_DIR$/src/app/App.kt" />
-        <option value="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.kt" />
         <option value="$PROJECT_DIR$/src/app/views/data/PostRepository.kt" />
+        <option value="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.kt" />
+        <option value="$PROJECT_DIR$/src/app/views/postdetail/PostDetail.css" />
       </list>
     </option>
   </component>
@@ -192,7 +187,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -209,6 +203,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Unknown.Debug in Chrome1927885620">
+  <component name="RunManager" selected="Unknown.Debug in Chrome1587295150">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -352,7 +347,7 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.40022936" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4254457" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.43273905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -497,11 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/home/Home.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="572">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <element signature="e#24#289#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -512,27 +504,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/views/data/PostRepository.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="141" column="469" selection-start-line="141" selection-start-column="469" selection-end-line="141" selection-end-column="469" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/postdetail/PostDetail.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="229">
+          <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="42" />
           <folding>
             <element signature="e#30#377#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/views/data/PostRepository.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="141" column="469" selection-start-line="141" selection-start-column="469" selection-end-line="141" selection-end-column="469" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/views/postdetail/PostDetail.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="342">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
         </state>
       </provider>
     </entry>

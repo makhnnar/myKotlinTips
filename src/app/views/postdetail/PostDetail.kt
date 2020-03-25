@@ -70,10 +70,12 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
                         }
                     }
                     is CodeElment -> {
-                        prismComponent{
-                            attrs {
-                                codeToShow = it.code
-                                langSintax = it.lang
+                        div("codeContainer") {
+                            prismComponent{
+                                attrs {
+                                    codeToShow = it.code
+                                    langSintax = it.lang
+                                }
                             }
                         }
                     }

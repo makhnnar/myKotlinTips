@@ -33,3 +33,10 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-self: center;
 }
+
+.codeContainer{
+    width: 800px;
+    height: auto;
+    align-self: center;
+    text-align: left;
+}
