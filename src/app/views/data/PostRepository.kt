@@ -7,7 +7,7 @@ val allPostsData = listOf(
                 "1",
                 "Custom View Components en Android",
                 "Un breve tutorial de como iniciar el desarrollo de componentes custom en Android.",
-                "https://i.postimg.cc/tCHPJKYK/gatito.jpg",
+                "https://i.postimg.cc/nzhBNPcr/img12.jpg",
                 listOf(
                         H1Elment(
                                 "Custom View Components en Android"
@@ -140,6 +140,166 @@ val allPostsData = listOf(
                                 listOf(
                                         StrElment(
                                                 "Es necesario, que existan tantas etiquetas del tipo declare-styleable, como componentes custom tengamos definidos en nuestro proyecto. En estos hacemos uso de la etiqueta attr, con la cual definimos el nombre y el tipo de dato asociado al atributo. Por ahora definiremos el atributo como timeBlocked y será de tipo entero, y con este valor podremos pasar el tiempo que queramos que el botón se bloque al ser presionado. "
+                                        )
+                                )
+                        ),
+                        CodeElment(
+                                "var BLOCKED_TIME = 0\n" +
+                                        "attrs.let {\n" +
+                                        "       var a = context.obtainStyledAttributes(\n" +
+                                        "       it,\n" +
+                                        "       R.styleable.SelfBlockButton\n" +
+                                        "       )\n" +
+                                        "       BLOCKED_TIME = a.getInteger(\n" +
+                                        "R.styleable.SelfBlockButton_timeBlocked,\n" +
+                                        "30\n" +
+                                        "      )\n" +
+                                        "       a.recycle()\n" +
+                                        "   }\n",
+                                "javascript"
+
+                        ),
+                        PElment(
+                                listOf(
+                                        StrElment(
+                                                "dentro del bloque let, hacemos uso de la instancia “a”, la cual es una referencia de "
+                                        ),
+                                        BElment(
+                                                "StyledAttributes"
+                                        ),
+                                        StrElment(
+                                                ", con el cual podemos acceder a los parámetros definidos en el xml que se mencionó anteriormente. En este caso específico, se usa el método getInteger, el cual recibe dos parámetros, siendo el primero el nombre del parámetro a leer como entero, y su valor por defecto, si el parámetro no es definido en el xml, en donde nuestro caso hemos colocado 30."
+                                        )
+                                )
+                        ),
+                        PElment(
+                                listOf(
+                                        StrElment(
+                                                "Para finalizar nuestro componente, nos toca definir lo que sucederá cuando se presione el mismo. Para este objetivo hacemos uso de CountDownTimer, deshabilitado el boton antes de iniciar el conteo, y habilitando nuevamente al finalizar el mismo."
+                                        )
+                                )
+                        ),
+                        CodeElment(
+                                "blockedButton.setOnClickListener{\n" +
+                                        "\tblockedButton.isEnable = false\n" +
+                                        "\tcounter = object : CountDownTimer(BLOCKED_TIME,1000){\n" +
+                                        "            override fun onTick(millisUntilFinished: Long) {\n" +
+                                        "\n" +
+                                        "            }\n" +
+                                        "           \n" +
+                                        "            override fun onFinish() {\n" +
+                                        "               blockedButton.isEnable = true\n" +
+                                        "            }\n" +
+                                        "\n" +
+                                        "        }.start()\n" +
+                                        "}\n",
+                                "javascript"
+
+                        ),
+                        PElment(
+                                listOf(
+                                        StrElment(
+                                        "Finalmente nuestra clase completa quedaría de la siguiente manera."
+                                        )
+                                )
+                        ),
+                        CodeElment(
+                                "class SelfBlockButton @JvmOverloads constructor(\n" +
+                                        "       context: Context,\n" +
+                                        "       attrs: AttributeSet? = null,\n" +
+                                        "       defStyle: Int = 0\n" +
+                                        ") : RelativeLayout(context, attrs, defStyle){\n" +
+                                        "\n" +
+                                        "   init {\n" +
+                                        "       LayoutInflater.from(context)\n" +
+                                        "           .inflate(\n" +
+                                        "                   R.layout.selfBlockButtonLayout,\n" +
+                                        "                   this,\n" +
+                                        "                   true\n" +
+                                        "       )\n" +
+                                        "\n" +
+                                        "       attrs.let {\n" +
+                                        "           var a = context.obtainStyledAttributes(\n" +
+                                        "               it,\n" +
+                                        "               R.styleable.SelfBlockButton\n" +
+                                        "           )\n" +
+                                        "           BLOCKED_TIME = a.getInteger(\n" +
+                                        "               R.styleable.SelfBlockButton_timeBlocked,\n" +
+                                        "               30\n" +
+                                        "           )\n" +
+                                        "           a.recycle()\n" +
+                                        "       }\n" +
+                                        "       blockedButton.setOnClickListener{\n" +
+                                        "           blockedButton.isEnable = false\n" +
+                                        "           counter = object : CountDownTimer(BLOCKED_TIME,1000){\n" +
+                                        "               override fun onTick(millisUntilFinished: Long) {\n" +
+                                        "\n" +
+                                        "               }\n" +
+                                        "           \n" +
+                                        "               override fun onFinish() {\n" +
+                                        "                   blockedButton.isEnable = true\n" +
+                                        "               }\n" +
+                                        "\n" +
+                                        "           }.start()\n" +
+                                        "       }\n" +
+                                        "\n" +
+                                        "   }\n" +
+                                        "\n" +
+                                        "}\n",
+                                "javascript"
+
+                        ),
+                        PElment(
+                                listOf(
+                                        StrElment(
+                                                "y nuestro layout selfBlockButtonLayout"
+                                        )
+                                )
+                        ),
+                        CodeElment(
+                                "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
+                                        "<merge xmlns:android=\"http://schemas.android.com/apk/res/android\"\n" +
+                                        "    xmlns:tools=\"http://schemas.android.com/tools\"\n" +
+                                        "    tools:parentTag=\"android.widget.RelativeLayout\"\n" +
+                                        "    android:layout_width=\"match_parent\"\n" +
+                                        "    android:layout_height=\"match_parent\">\n" +
+                                        "\n" +
+                                        "    <Button\n" +
+                                        "        android:id=\"@+id/blockedButton\"\n" +
+                                        "        android:layout_width=\"match_parent\"\n" +
+                                        "        android:layout_height=\"match_parent\"/>\n" +
+                                        "\n" +
+                                        "</merge>\n",
+                                "xml"
+
+                        ),
+                        PElment(
+                                listOf(
+                                        StrElment(
+                                                "Por último, donde queramos usar nuestro botón, deberemos usarlo como si de otro componente de android mediante el xml. Suponiendo que definimos el componente en un directorio llamado views, él mismo se llamaría de la siguiente forma."
+                                        )
+                                )
+                        ),
+                        CodeElment(
+                                "<com.example.views.SelfBlockButton\n" +
+                                        "        android:id=\"@+id/customBlockedButton\"\n" +
+                                        "        android:layout_width=\"200dp\"\n" +
+                                        "        android:layout_height=\"50dp\"\n" +
+                                        "        app:timeBlocked=\"60\"/>\n",
+                                "xml"
+
+                        ),
+                        PElment(
+                                listOf(
+                                        StrElment(
+                                                "Con todo esto ya estamos listos para poder usar nuestro botón en cualquier parte del app, sin tener que volver a reescribir su comportamiento."
+                                        )
+                                )
+                        ),
+                        PElment(
+                                listOf(
+                                        StrElment(
+                                                "Sin mas nada que agregar, me despido, esperando escribir otro post que pueda ser de ayuda en tu vida como desarrollador android nativo, y mientras mira a este lindo gatito."
                                         )
                                 )
                         ),

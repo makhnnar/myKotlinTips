@@ -13,11 +13,6 @@ interface HomeProps : RProps {
 
 class Home : RComponent<HomeProps, RState>(){
 
-
-    override fun componentDidMount() {
-
-    }
-
     override fun RBuilder.render() {
         div("home") {
             profileBar(
