@@ -3,12 +3,11 @@
     content: "";
 
     display:flex;
+    padding: 30px;
+
     align-items: center;
     flex-direction: column;
-    margin: 30px auto;
-    padding: 0;
-  
-    width: 25%;
+    margin: 30px;
 
     overflow: hidden;
   
@@ -21,6 +20,22 @@
     color: #000000;
     
     transition: background-color .3s;
+    
+}
+
+/* mobile devices*/
+@media only screen and (min-width : 300px) {
+    .itemListPost{ width: 100%; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 600px) {
+    .itemListPost{ width: 50%; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 700px) {
+    .itemListPost{ width: 25%; }
 }
 
 .itemListPost:hover, .itemListPost:focus {

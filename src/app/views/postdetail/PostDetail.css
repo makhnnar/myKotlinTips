@@ -40,3 +40,17 @@
     align-self: center;
     text-align: left;
 }
+
+.socialShare{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
+    align-self: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.socialShare p{
+    text-align:center;
+}

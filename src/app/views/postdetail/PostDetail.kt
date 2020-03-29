@@ -2,7 +2,6 @@ package app.views.postdetail
 
 import app.views.home.postslist.postlistitem.*
 import app.views.postdetail.titlepostbar.titlePostBar
-import kotlinx.html.id
 import react.*
 import react.dom.div
 import react.dom.h1
@@ -10,7 +9,6 @@ import react.dom.img
 import react.dom.p
 import react.dom.b
 import react.dom.a
-import react.router.dom.BrowserRouterComponent
 import reactshare.*
 import simpleprismcomponent.prismComponent
 import kotlin.browser.window
@@ -86,36 +84,38 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
                     }
                 }
             }
-            div {
+            div("socialShare") {
                 p {
                     +"Si te ha gustado, comparte!"
                 }
-                telegramShareButton {
-                    attrs.url = window.location.href
-                    telegramIcon {
-                        attrs.size = 32
-                        attrs.round = true
+                div {
+                    telegramShareButton {
+                        attrs.url = window.location.href
+                        telegramIcon {
+                            attrs.size = 32
+                            attrs.round = true
+                        }
                     }
-                }
-                whatsappShareButton {
-                    attrs.url = window.location.href
-                    whatsappIcon {
-                        attrs.size = 32
-                        attrs.round = true
+                    whatsappShareButton {
+                        attrs.url = window.location.href
+                        whatsappIcon {
+                            attrs.size = 32
+                            attrs.round = true
+                        }
                     }
-                }
-                facebookShareButton {
-                    attrs.url = window.location.href
-                    facebookIcon {
-                        attrs.size = 32
-                        attrs.round = true
+                    facebookShareButton {
+                        attrs.url = window.location.href
+                        facebookIcon {
+                            attrs.size = 32
+                            attrs.round = true
+                        }
                     }
-                }
-                twitterShareButton {
-                    attrs.url = window.location.href
-                    twitterIcon {
-                        attrs.size = 32
-                        attrs.round = true
+                    twitterShareButton {
+                        attrs.url = window.location.href
+                        twitterIcon {
+                            attrs.size = 32
+                            attrs.round = true
+                        }
                     }
                 }
             }

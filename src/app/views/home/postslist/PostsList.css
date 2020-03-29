@@ -4,4 +4,5 @@
     justify-content: center;
     min-height: 60vh;
     min-width: 100vw;
+    flex-wrap: wrap;
 }
