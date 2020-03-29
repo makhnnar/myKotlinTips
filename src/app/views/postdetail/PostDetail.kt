@@ -11,7 +11,9 @@ import react.dom.p
 import react.dom.b
 import react.dom.a
 import react.router.dom.BrowserRouterComponent
+import reactshare.*
 import simpleprismcomponent.prismComponent
+import kotlin.browser.window
 
 
 interface PostDetailProps : RProps {
@@ -81,6 +83,39 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
                     }
                     else -> {
 
+                    }
+                }
+            }
+            div {
+                p {
+                    +"Si te ha gustado, comparte!"
+                }
+                telegramShareButton {
+                    attrs.url = window.location.href
+                    telegramIcon {
+                        attrs.size = 32
+                        attrs.round = true
+                    }
+                }
+                whatsappShareButton {
+                    attrs.url = window.location.href
+                    whatsappIcon {
+                        attrs.size = 32
+                        attrs.round = true
+                    }
+                }
+                facebookShareButton {
+                    attrs.url = window.location.href
+                    facebookIcon {
+                        attrs.size = 32
+                        attrs.round = true
+                    }
+                }
+                twitterShareButton {
+                    attrs.url = window.location.href
+                    twitterIcon {
+                        attrs.size = 32
+                        attrs.round = true
                     }
                 }
             }
