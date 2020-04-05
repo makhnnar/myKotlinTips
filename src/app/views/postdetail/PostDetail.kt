@@ -26,8 +26,8 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
     }
 
     override fun RBuilder.render() {
-        titlePostBar(props.postItemData.title)
         div("postDetail") {
+            titlePostBar(props.postItemData.title)
             props.postItemData.content.map {
                 when(it){
                     is ImgElment ->{

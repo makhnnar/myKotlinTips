@@ -1,10 +1,8 @@
 .socialGroupButtons {
-    width: 250px;
+    width: auto;
     height: auto;
     display: flex;
     list-style: none;
-    justify-content: center;
-    align-items: center;
 }
 
 .socialGroupButtons a {
@@ -14,6 +12,6 @@
 .socialGroupButtons img {
     background-position: center;
     background-size: contain;
-    width: 25px;
-    height: 25px;
+    width: auto;
+    height: auto;
 }

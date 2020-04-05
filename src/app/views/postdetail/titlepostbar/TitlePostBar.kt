@@ -21,7 +21,7 @@ external val icons8Logo: dynamic
  * */
 
 fun RBuilder.titlePostBar(title:String) {
-    header {
+    div("headerDiv") {
         h3 {
             +title
         }

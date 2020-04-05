@@ -1,13 +1,10 @@
-header {
-    width: 100%;
-    height: 60px;
+.headerDiv {
+    min-width: 100%;
     display: flex;
-    flex-direction: row;
-    background-color:#eeeeee;
-    position: fixed;
 
+    background-color:#eeeeee;
     overflow: hidden;
-  
+    position: fixed;
     border-width: 0;
     outline: none;
     border-radius: 2px;
@@ -19,15 +16,36 @@ header {
     transition: background-color .3s;
 }
 
-header h3 {
-    display: flex;
-    flex: 2 2;
-    justify-content: center;
-}
-
 .titlePostBar{
     display: flex;
-    flex: 1 1;
-    align-self: flex-end;
-    justify-content: flex-end;
 }
+
+/* mobile devices*/
+@media only screen and (min-width : 300px) {
+    .headerDiv{
+        flex-direction: column;
+        height: 100px;
+    }
+    .titlePostBar{
+        align-self: center;
+        justify-content: center;
+    }
+    .titlePostBar img{
+        width: 20px;
+        height: auto;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 700px) {
+    .headerDiv{
+        flex-direction: row;
+        height: 60px;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .titlePostBar{
+        height: 60px;
+    }
+}
+

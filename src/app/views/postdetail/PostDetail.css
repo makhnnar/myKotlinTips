@@ -1,13 +1,18 @@
 .postDetail{
     display: flex;
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     flex-direction: column;
-    margin-top: 80px;
+}
+
+.postDetail h1{
+    width: 70%;
+    align-self: center;
+    margin-top:120px;
 }
 
 .postDetail img{
-    width: 800px;
+    width: 70%;
     height: auto;
     align-self: center;
     margin-bottom: 80px;
@@ -24,7 +29,7 @@
 }
 
 .postDetail p{
-    width: 800px;
+    width: 70%;
     height: auto;
     text-align: justify;
     text-justify: inter-word;
@@ -35,7 +40,7 @@
 }
 
 .codeContainer{
-    width: 800px;
+    width: 70%;
     height: auto;
     align-self: center;
     text-align: left;
@@ -44,7 +49,7 @@
 .socialShare{
     display: flex;
     flex-direction: column;
-    width: 800px;
+    width: 70%;
     height: auto;
     align-self: center;
     justify-content: space-around;
