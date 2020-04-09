@@ -16,28 +16,33 @@ external val twitterLogo: dynamic
 external val icons8Logo: dynamic
 
 /**
- *todo:put classes on nav for to add styles and fix positions on screen
+ *todo:transform this using dynamic data, an array
  * */
 
-fun RBuilder.socialGroupButtons() {
+fun RBuilder.socialGroupButtons(
+        linkedIn: String = "https://www.linkedin.com/in/pedro-gomez-736b08145/",
+        github: String = "https://github.com/makhnnar",
+        twitter: String = "https://twitter.com/phgomez674",
+        icon8: String = "https://icons8.com"
+) {
     ul ("socialGroupButtons"){
         socialButton(
-                "https://www.linkedin.com/in/pedro-gomez-736b08145/",
+                linkedIn,
                 "_blank",
                 linkedInLogo
         )
         socialButton(
-                "https://github.com/makhnnar",
+                github,
                 "_blank",
                 githubLogo
         )
         socialButton(
-                "https://twitter.com/phgomez674",
+                twitter,
                 "_blank",
                 twitterLogo
         )
         socialButton(
-                "https://icons8.com",
+                icon8,
                 "_blank",
                 icons8Logo
         )

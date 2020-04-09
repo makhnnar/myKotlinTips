@@ -17,10 +17,13 @@ class Home : RComponent<HomeProps, RState>(){
         div("home") {
             profileBar(
                     ProfileData(
-                            "Full Name",
-                            "Descripcion",
+                            "El Blog de Pedro",
+                            "Las aventuras de un programador que quiere compartir algo con el mundo",
                             "https://i.postimg.cc/qtMKQ920/orange-tabby-cat-near-window-2071873.jpg",
-                            ""
+                            "https://www.linkedin.com/in/pedro-gomez-736b08145/",
+                            "https://github.com/makhnnar",
+                            "https://twitter.com/phgomez674",
+                            "https://icons8.com"
                     )
             )
             postsList(

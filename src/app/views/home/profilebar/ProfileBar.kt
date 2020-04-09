@@ -3,9 +3,7 @@ package app.views.home.profilebar
 import app.views.commons.socialGroupButtons
 import kotlinx.html.id
 import react.RBuilder
-import react.dom.div
-import react.dom.img
-import react.dom.p
+import react.dom.*
 
 @JsModule("src/app/views/home/profilebar/photo-profile.jpg")
 external val profilePhoto: dynamic
@@ -21,14 +19,19 @@ fun RBuilder.profileBar(
                 src = profilePhoto
             }
         }
-        p {
+        h1 {
            +profileData.fullName
         }
         p {
-            +profileData.description
+            +"\"${profileData.description}\""
         }
         div("socialContainer") {
-            socialGroupButtons()
+            socialGroupButtons(
+                    profileData.linkedIn,
+                    profileData.github,
+                    profileData.twitter,
+                    profileData.icon8
+            )
         }
     }
 }

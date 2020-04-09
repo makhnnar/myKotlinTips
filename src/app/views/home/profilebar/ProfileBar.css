@@ -22,6 +22,10 @@
     flex-wrap: wrap;
 }
 
+.profileBar p{
+    font-style:italic;
+}
+
 /* mobile devices*/
 @media only screen and (min-width : 300px) {
     .profileBar{ flex-direction: column; }
