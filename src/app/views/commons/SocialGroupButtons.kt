@@ -29,22 +29,26 @@ fun RBuilder.socialGroupButtons(
         socialButton(
                 linkedIn,
                 "_blank",
-                linkedInLogo
+                linkedInLogo,
+                "linkedin"
         )
         socialButton(
                 github,
                 "_blank",
-                githubLogo
+                githubLogo,
+                "github"
         )
         socialButton(
                 twitter,
                 "_blank",
-                twitterLogo
+                twitterLogo,
+                "twitter"
         )
         socialButton(
                 icon8,
                 "_blank",
-                icons8Logo
+                icons8Logo,
+                "icons8"
         )
     }
 }

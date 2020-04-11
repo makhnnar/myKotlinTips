@@ -22,17 +22,19 @@ class App : RComponent<RProps, RState>() {
 
     override fun RState.init() {
         //initializeApp()
+        var firebaseOptions = FirebaseOptions()
+        firebaseOptions.apply {
+            this.apiKey = "AIzaSyB8o4J6qso5CbDXWFAtV1nqZn_8vBLw4UA"
+            this.authDomain = "mykotlintips.firebaseapp.com"
+            this.databaseURL = "https://mykotlintips.firebaseio.com"
+            this.projectId = "mykotlintips"
+            this.storageBucket = "mykotlintips.appspot.com"
+            this.messagingSenderId = "204702118352"
+            this.appId = "1:204702118352:web:ae99ab4a800cfcb5f409d5"
+            this.measurementId = "G-0GTG4V7Q09"
+        }
         fireBase.initializeApp(
-                FirebaseOptions().apply {
-                    apiKey = "AIzaSyB8o4J6qso5CbDXWFAtV1nqZn_8vBLw4UA"
-                    authDomain = "mykotlintips.firebaseapp.com"
-                    databaseURL = "https://mykotlintips.firebaseio.com"
-                    projectId = "mykotlintips"
-                    storageBucket = "mykotlintips.appspot.com"
-                    messagingSenderId = "204702118352"
-                    appId = "1:204702118352:web:ae99ab4a800cfcb5f409d5"
-                    measurementId = "G-0GTG4V7Q09"
-                }
+            firebaseOptions
         )
     }
 
