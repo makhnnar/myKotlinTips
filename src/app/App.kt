@@ -39,7 +39,10 @@ class App : RComponent<RProps, RState>() {
     }
 
     override fun RBuilder.render() {
-        browserRouter {
+        home(
+            getAllPostData()
+        )
+        /*browserRouter {
             switch {
                 route("/", exact = true) {
                     home(
@@ -52,7 +55,7 @@ class App : RComponent<RProps, RState>() {
                     )
                 }
             }
-        }
+        }*/
     }
 
 }
