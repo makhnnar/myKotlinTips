@@ -1,6 +1,8 @@
 package app.views.postdetail.titlepostbar
 
 import app.views.commons.socialGroupButtons
+import app.views.home.OnPostActions
+import kotlinx.html.js.onClickFunction
 import react.RBuilder
 import react.dom.*
 
@@ -20,12 +22,25 @@ external val icons8Logo: dynamic
  *todo:put classes on nav for to add styles and fix positions on screen
  * */
 
-fun RBuilder.titlePostBar(title:String) {
+fun RBuilder.titlePostBar(
+        title:String,
+        onPostActions: OnPostActions
+) {
     div("headerDiv") {
-        h3 {
-            +title
+        div("titleBack"){
+            p("backHome") {
+                +"BACK"
+                attrs {
+                    onClickFunction = {
+                        onPostActions.backToHome()
+                    }
+                }
+            }
+            p("titleBar") {
+                +title
+            }
         }
-        div("titlePostBar"){
+        div("titleSocialButton"){
             socialGroupButtons()
         }
     }

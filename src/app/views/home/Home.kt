@@ -9,6 +9,14 @@ import react.dom.*
 
 interface HomeProps : RProps {
     var postsItems: List<PostItemData>
+    var onPostActions:OnPostActions
+}
+
+interface OnPostActions{
+
+    fun goToPost(idPost:String)
+    fun backToHome()
+
 }
 
 class Home : RComponent<HomeProps, RState>(){
@@ -27,7 +35,8 @@ class Home : RComponent<HomeProps, RState>(){
                     )
             )
             postsList(
-                    props.postsItems
+                    props.postsItems,
+                    props.onPostActions
             )
         }
     }
@@ -35,7 +44,9 @@ class Home : RComponent<HomeProps, RState>(){
 }
 
 fun RBuilder.home(
-        postsItems: List<PostItemData>
+        postsItems: List<PostItemData>,
+        onPostActions: OnPostActions
 ) = child(Home::class) {
     attrs.postsItems = postsItems
+    attrs.onPostActions = onPostActions
 }

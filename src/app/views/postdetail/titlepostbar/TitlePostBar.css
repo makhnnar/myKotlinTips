@@ -16,21 +16,40 @@
     transition: background-color .3s;
 }
 
-.titlePostBar{
-    display: flex;
-}
-
 /* mobile devices*/
 @media only screen and (min-width : 300px) {
     .headerDiv{
         flex-direction: column;
-        height: 100px;
+        height: 110px;
     }
-    .titlePostBar{
+    .backHome{
+        flex: 1 1;
+        align-self: left;
+        margin-left: 10px;
+        height: 30px;
+    }
+    .titleBar{
+        display: flex;
+        flex: 6 6;
+        font-size: 30px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        text-overflow: clip;
+    }
+    .titleBack{
+        display: flex;
+        height: 55px;
+        flex-direction: row;
+        text-align: center;
+    }
+    .titleSocialButton{
+        display: flex;
         align-self: center;
+        align-items: center;
         justify-content: center;
     }
-    .titlePostBar img{
+    .titleSocialButton img{
         width: 20px;
         height: auto;
     }
@@ -44,8 +63,31 @@
         justify-content:space-around;
         align-items:center;
     }
-    .titlePostBar{
-        height: 60px;
+    .backHome{
+        flex: 1 1;
+        align-self: left;
+        margin-left: 10px;
+        height: 30px;
+    }
+    .titleBar{
+        flex: 3 3;
+        font-size: 30px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+    }
+    .titleBack{
+        display: flex;
+        flex: 3 3;
+        flex-direction: row;
+    }
+    .titleSocialButton{
+        display: flex;
+        height: 100%;
+        flex: 1 1;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
     }
 }
 

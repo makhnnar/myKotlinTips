@@ -1,5 +1,6 @@
 package app.views.postdetail
 
+import app.views.home.OnPostActions
 import app.views.home.postslist.postlistitem.*
 import app.views.postdetail.titlepostbar.titlePostBar
 import react.*
@@ -16,6 +17,7 @@ import kotlin.browser.window
 
 interface PostDetailProps : RProps {
     var postItemData: PostItemData
+    var onPostActions:OnPostActions
 }
 
 class PostDetail : RComponent<PostDetailProps, RState>(){
@@ -27,7 +29,10 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
 
     override fun RBuilder.render() {
         div("postDetail") {
-            titlePostBar(props.postItemData.title)
+            titlePostBar(
+                    props.postItemData.title,
+                    props.onPostActions
+            )
             props.postItemData.content.map {
                 when(it){
                     is ImgElment ->{
@@ -126,8 +131,10 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
 
 
 fun RBuilder.postDetail(
-        postItemData: PostItemData
+        postItemData: PostItemData,
+        onPostActions: OnPostActions
 ) = child(PostDetail::class) {
     attrs.postItemData = postItemData
+    attrs.onPostActions = onPostActions
 }
 

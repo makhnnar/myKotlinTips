@@ -1,17 +1,16 @@
 .socialGroupButtons {
-    width: auto;
-    height: auto;
     display: flex;
     list-style: none;
+    flex-direction: row;
 }
 
-.socialGroupButtons a {
-    margin-right: 10px;
+.socialGroupButtons li{
+    display: flex;
+    flex-direction: column;
 }
 
-.socialGroupButtons img {
-    background-position: center;
-    background-size: contain;
-    width: auto;
-    height: auto;
+.socialGroupButtons li a{
+    width: 30px;
+    height: 30px;
+    align-items: center;
 }

@@ -2,6 +2,7 @@ package app
 
 import app.views.data.getAllPostData
 import app.views.data.getPostDataById
+import app.views.home.OnPostActions
 import app.views.home.home
 import app.views.home.postslist.postlistitem.*
 import app.views.postdetail.postDetail
@@ -18,10 +19,25 @@ interface RoutePostDetailProps : RProps {
     var idPost :String
 }
 
-class App : RComponent<RProps, RState>() {
+interface AppState : RState {
+    var idPost :String
+    var secction:Section
+}
 
-    override fun RState.init() {
+class App : RComponent<RProps, AppState>(),OnPostActions {
+
+    override fun AppState.init(props: RProps) {
         //initializeApp()
+        idPost = "1"
+        secction = Section.HOME
+        //todo: no se esta ejecutando este init
+    }
+
+    override fun componentWillMount() {
+        setState {
+            idPost = "1"
+            secction = Section.HOME
+        }
         var firebaseOptions = FirebaseOptions()
         firebaseOptions.apply {
             this.apiKey = "AIzaSyB8o4J6qso5CbDXWFAtV1nqZn_8vBLw4UA"
@@ -34,14 +50,27 @@ class App : RComponent<RProps, RState>() {
             this.measurementId = "G-0GTG4V7Q09"
         }
         fireBase.initializeApp(
-            firebaseOptions
+                firebaseOptions
         )
+        console.log("Inicializo el componente")
+        //super.componentWillMount()
     }
 
     override fun RBuilder.render() {
-        home(
-            getAllPostData()
-        )
+        when(state.secction){
+            Section.HOME -> {
+                home(
+                        getAllPostData(),
+                        this@App
+                )
+            }
+            Section.POST -> {
+                postDetail(
+                        getPostDataById(state.idPost),
+                        this@App
+                )
+            }
+        }
         /*browserRouter {
             switch {
                 route("/", exact = true) {
@@ -56,6 +85,19 @@ class App : RComponent<RProps, RState>() {
                 }
             }
         }*/
+    }
+
+    override fun goToPost(idPost: String) {
+        setState {
+            secction = Section.POST
+            this.idPost = idPost
+        }
+    }
+
+    override fun backToHome() {
+        setState {
+            secction = Section.HOME
+        }
     }
 
 }
