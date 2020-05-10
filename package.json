@@ -3,6 +3,10 @@
   "name": "my-app-kotlin",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makhnnar/myKotlinTips.git"
+  },
   "dependencies": {
     "@jetbrains/kotlin-react-redux": "^5.0.7-pre.91",
     "@jetbrains/kotlin-react-router-dom": "^4.3.1-pre.91",
