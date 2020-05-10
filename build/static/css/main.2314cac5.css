@@ -6,21 +6,20 @@ body {
 }
 
 .socialGroupButtons {
-    width: auto;
-    height: auto;
     display: flex;
     list-style: none;
+    flex-direction: row;
 }
 
-.socialGroupButtons a {
-    margin-right: 10px;
+.socialGroupButtons li{
+    display: flex;
+    flex-direction: column;
 }
 
-.socialGroupButtons img {
-    background-position: center;
-    background-size: contain;
-    width: auto;
-    height: auto;
+.socialGroupButtons li a{
+    width: 30px;
+    height: 30px;
+    align-items: center;
 }
 .home{
     display: flex;
@@ -165,6 +164,7 @@ body {
 /* mobile devices*/
 @media only screen and (min-width : 300px) {
     .profileBar{ flex-direction: column; }
+    #imgProfile{ margin-top: 20px;}
 }
 
 /* Medium Devices, Desktops */
@@ -174,6 +174,9 @@ body {
         position: absolute;
         bottom: 8px;
         right: 16px;
+        display: flex;
+        flex-direction: row;
+        width: 250px;
     }
 }
 
@@ -184,9 +187,9 @@ body {
 }
 
 .socialContainer img{
-    width: 50px;
-    height: auto;
-    opacity: 0.5;
+    opacity: 0.7;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .socialContainer img:hover{
@@ -274,21 +277,40 @@ body {
     transition: background-color .3s;
 }
 
-.titlePostBar{
-    display: flex;
-}
-
 /* mobile devices*/
 @media only screen and (min-width : 300px) {
     .headerDiv{
         flex-direction: column;
-        height: 100px;
+        height: 110px;
     }
-    .titlePostBar{
+    .backHome{
+        flex: 1 1;
+        align-self: left;
+        margin-left: 10px;
+        height: 30px;
+    }
+    .titleBar{
+        display: flex;
+        flex: 6 6;
+        font-size: 30px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        text-overflow: clip;
+    }
+    .titleBack{
+        display: flex;
+        height: 55px;
+        flex-direction: row;
+        text-align: center;
+    }
+    .titleSocialButton{
+        display: flex;
         align-self: center;
+        align-items: center;
         justify-content: center;
     }
-    .titlePostBar img{
+    .titleSocialButton img{
         width: 20px;
         height: auto;
     }
@@ -302,8 +324,31 @@ body {
         justify-content:space-around;
         align-items:center;
     }
-    .titlePostBar{
-        height: 60px;
+    .backHome{
+        flex: 1 1;
+        align-self: left;
+        margin-left: 10px;
+        height: 30px;
+    }
+    .titleBar{
+        flex: 3 3;
+        font-size: 30px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+    }
+    .titleBack{
+        display: flex;
+        flex: 3 3;
+        flex-direction: row;
+    }
+    .titleSocialButton{
+        display: flex;
+        height: 100%;
+        flex: 1 1;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -315,4 +360,4 @@ body {
 }
 
 
-/*# sourceMappingURL=main.0cb8c3a9.css.map*/
+/*# sourceMappingURL=main.2314cac5.css.map*/
