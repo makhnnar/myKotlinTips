@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">myKotlinTips</string>
+    <string name="title_activity_main">myKotlinTips</string>
+    <string name="package_name">com.easyappsolution.elblogdepedro</string>
+    <string name="custom_url_scheme">com.easyappsolution.elblogdepedro</string>
+</resources>

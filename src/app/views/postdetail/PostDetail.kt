@@ -28,98 +28,100 @@ class PostDetail : RComponent<PostDetailProps, RState>(){
     }
 
     override fun RBuilder.render() {
-        div("postDetail") {
+        div("postPage"){
             titlePostBar(
                     props.postItemData.title,
                     props.onPostActions
             )
-            props.postItemData.content.map {
-                when(it){
-                    is ImgElment ->{
-                        img {
-                            attrs{
-                                src = it.src
+            div("postDetail") {
+                props.postItemData.content.map {
+                    when(it){
+                        is ImgElment ->{
+                            img {
+                                attrs{
+                                    src = it.src
+                                }
                             }
                         }
-                    }
-                    is H1Elment -> {
-                        h1 {
-                            +it.title
+                        is H1Elment -> {
+                            h1 {
+                                +it.title
+                            }
                         }
-                    }
-                    is PElment -> {
-                        p {
-                            it.content.map{
-                                when(it){
-                                    is BElment ->{
-                                        b {
-                                            +it.strongText
+                        is PElment -> {
+                            p {
+                                it.content.map{
+                                    when(it){
+                                        is BElment ->{
+                                            b {
+                                                +it.strongText
+                                            }
                                         }
-                                    }
-                                    is LinkElment -> {
-                                        a(
-                                                it.link,
-                                                "_blank"
-                                        ) {
-                                            +it.word
+                                        is LinkElment -> {
+                                            a(
+                                                    it.link,
+                                                    "_blank"
+                                            ) {
+                                                +it.word
+                                            }
                                         }
-                                    }
-                                    is StrElment -> {
-                                        +it.str
-                                    }
-                                    else -> {
+                                        is StrElment -> {
+                                            +it.str
+                                        }
+                                        else -> {
 
+                                        }
                                     }
                                 }
                             }
                         }
-                    }
-                    is CodeElment -> {
-                        div("codeContainer") {
-                            prismComponent{
-                                attrs {
-                                    codeToShow = it.code
-                                    langSintax = it.lang
+                        is CodeElment -> {
+                            div("codeContainer") {
+                                prismComponent{
+                                    attrs {
+                                        codeToShow = it.code
+                                        langSintax = it.lang
+                                    }
                                 }
                             }
                         }
-                    }
-                    else -> {
+                        else -> {
 
+                        }
                     }
                 }
-            }
-            div("socialShare") {
-                p {
-                    +"Si te ha gustado, comparte!"
-                }
-                div {
-                    telegramShareButton {
-                        attrs.url = window.location.href
-                        telegramIcon {
-                            attrs.size = 32
-                            attrs.round = true
-                        }
+                div("socialShare") {
+                    p {
+                        +"Si te ha gustado, comparte!"
                     }
-                    whatsappShareButton {
-                        attrs.url = window.location.href
-                        whatsappIcon {
-                            attrs.size = 32
-                            attrs.round = true
+                    div {
+                        telegramShareButton {
+                            attrs.url = window.location.href
+                            telegramIcon {
+                                attrs.size = 32
+                                attrs.round = true
+                            }
                         }
-                    }
-                    facebookShareButton {
-                        attrs.url = window.location.href
-                        facebookIcon {
-                            attrs.size = 32
-                            attrs.round = true
+                        whatsappShareButton {
+                            attrs.url = window.location.href
+                            whatsappIcon {
+                                attrs.size = 32
+                                attrs.round = true
+                            }
                         }
-                    }
-                    twitterShareButton {
-                        attrs.url = window.location.href
-                        twitterIcon {
-                            attrs.size = 32
-                            attrs.round = true
+                        facebookShareButton {
+                            attrs.url = window.location.href
+                            facebookIcon {
+                                attrs.size = 32
+                                attrs.round = true
+                            }
+                        }
+                        twitterShareButton {
+                            attrs.url = window.location.href
+                            twitterIcon {
+                                attrs.size = 32
+                                attrs.round = true
+                            }
                         }
                     }
                 }

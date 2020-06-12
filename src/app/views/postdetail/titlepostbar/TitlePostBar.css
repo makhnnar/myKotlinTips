@@ -1,6 +1,7 @@
 .headerDiv {
     min-width: 100%;
     display: flex;
+    height: auto;
 
     background-color:#eeeeee;
     overflow: hidden;
@@ -20,38 +21,43 @@
 @media only screen and (min-width : 300px) {
     .headerDiv{
         flex-direction: column;
-        height: 110px;
+        height: auto;
     }
     .backHome{
         flex: 1 1;
         align-self: left;
+        margin-top: 10px;
         margin-left: 10px;
-        height: 30px;
+        height: 24px;
+        justify-content: center;
     }
     .titleBar{
         display: flex;
         flex: 6 6;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: bold;
         justify-content: center;
         align-items: center;
         text-overflow: clip;
+        margin-top: 10px;
     }
     .titleBack{
         display: flex;
-        height: 55px;
+        height: auto;
         flex-direction: row;
         text-align: center;
+        flex: 1 1 auto;
     }
     .titleSocialButton{
         display: flex;
-        align-self: center;
-        align-items: center;
-        justify-content: center;
+        flex: 1 1;
+        margin: 0px;
     }
     .titleSocialButton img{
         width: 20px;
         height: auto;
+        margin: 0;
+        align-self: center;
     }
 }
 
@@ -59,13 +65,14 @@
 @media only screen and (min-width : 700px) {
     .headerDiv{
         flex-direction: row;
-        height: 60px;
+        height: auto;
         justify-content:space-around;
         align-items:center;
     }
     .backHome{
         flex: 1 1;
         align-self: left;
+        justify-content: center;
         margin-left: 10px;
         height: 30px;
     }

@@ -3,6 +3,7 @@ package app.views.postdetail.titlepostbar
 import app.views.commons.socialGroupButtons
 import app.views.home.OnPostActions
 import kotlinx.html.js.onClickFunction
+import materialicons.materialIcon
 import react.RBuilder
 import react.dom.*
 
@@ -28,8 +29,13 @@ fun RBuilder.titlePostBar(
 ) {
     div("headerDiv") {
         div("titleBack"){
-            p("backHome") {
-                +"BACK"
+            div("backHome") {
+                materialIcon{
+                    attrs {
+                        icon = "keyboard_arrow_left"
+                        size = 50
+                    }
+                }
                 attrs {
                     onClickFunction = {
                         onPostActions.backToHome()
