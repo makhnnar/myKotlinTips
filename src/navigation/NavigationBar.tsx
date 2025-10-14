@@ -7,8 +7,6 @@ export const NavigationBar = () => {
     <nav style={{ display: 'flex', gap: '20px', padding: '10px', borderBottom: '1px solid #ccc' }}>
       <Link to="/">Home</Link>
       <Link to="/profile">Profile</Link>
-      {/* Example for a specific post link (e.g., Post ID 123) */}
-      <Link to="/post/123">Post Detail (ID 123)</Link>
     </nav>
   );
 };
