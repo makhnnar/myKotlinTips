@@ -11,6 +11,14 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import { Link } from 'react-router-dom'; 
 
+import post1 from "./repo/how-i-became.md";
+
+//create a map of posts
+export const postsMap: Record<string, string> = {
+    "how-i-became": post1,
+    // Add more posts here as needed
+};
+
 interface PostCardProps {
     title: string;
     description: string;
@@ -87,7 +95,7 @@ const post = {
     title: "Deep Sea Discovery",
     description: "An incredible short documentary exploring the mysterious bioluminescent creatures found in the abyssal zone. Learn about their unique adaptations and the challenges of studying life thousands of feet below the surface. This is a journey you won't forget.",
     imageUrl: "https://images.unsplash.com/photo-1549419163-1a221295240f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NDU2NDd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwYWJ5c3NhbCU3QzBhfGVufDB8MHx8fDE3MDA1MDYwMDB8&ixlib=rb-4.0.3&q=80&w=400",
-    postId: "deep-sea-discovery"
+    postId: "how-i-became"
 };
 
 export const posts = [post, post, post]; // Example array with multiple posts
