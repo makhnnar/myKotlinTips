@@ -14,5 +14,7 @@ It was tricky, because I have to leave the country, I need to continue to work, 
 
 This is a brief of what happened because all the persons involved to make this possible was huge. By myself it would be impossible. I could do it because my wife, my mom, my dad, my family, all the teachers, and my friends were there. If you are reading this, I would like to tell you thank you, for trusting in me. For those friends there in Venezuela, and for the new ones I have here in Brazil. For those people I see only on camera every day, and those ones I have the pleasure to drink a cup of coffee with. Thank you. 
 
+![Alt text](/logo512.png "a title")
+
 *Created on 2025-08-27*   
 *by Pedro Gomez*
