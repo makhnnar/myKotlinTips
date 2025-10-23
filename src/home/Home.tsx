@@ -1,4 +1,5 @@
-import { posts, PostCard } from "../posts/PostCard";
+import { PostCard } from "../posts/PostCard";
+import { posts } from "../posts/repo/postRepo";
 
 export const Home = () => {
     return (

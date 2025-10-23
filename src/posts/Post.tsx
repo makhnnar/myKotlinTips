@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { postsMap } from "./PostCard";
+import { postsMap } from "./repo/postRepo";
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 import './postPage.css';
