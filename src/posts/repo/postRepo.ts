@@ -1,8 +1,10 @@
 
 import post1 from "./how-i-became.md";
+import profile from "./profile.md";
 
 export const postsMap: Record<string, string> = {
     "how-i-became": post1,
+    "profile": profile,
     // Add more posts here as needed
 };
 
