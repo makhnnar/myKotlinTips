@@ -1,13 +1,13 @@
 /* Styles for the main navigation container */
 .auto-navbar {
     display: flex;
+    position: sticky;
     flex-direction: column;
     padding: 1rem;
     background: #f4f4f4;
-    width: 200px;
-    height: 100vh;
-    overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Kept the enhanced style */
+    flex: 1;
+    overflow: visible;
 }
 
 /* Styles for the navigation title (H2) */
@@ -32,7 +32,6 @@
 
 /* Styles for the anchor links */
 .navbar-link {
-    display: block;
     text-decoration: none;
     color: #333; /* Default link color */
     transition: color 0.2s ease;

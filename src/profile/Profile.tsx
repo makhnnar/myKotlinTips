@@ -6,7 +6,9 @@ export const Profile = () => {
     const markdownContent = PostReader("profile"); 
     return <div className="postDetailContainer">
         <div className="postPage">
-            <ReactMarkdown children={markdownContent} />
+            <div className="textContent">
+                <ReactMarkdown children={markdownContent} />
+            </div>
         </div>
         <AutoNavbar markdown={markdownContent}/>
     </div>

@@ -1,7 +1,23 @@
+.postDetailContainer {
+    display: flex;
+    overflow: visible;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 .postPage {
     display: flex;
+    flex: 4;
     flex-direction: column;
-    max-width: 900px;
+}
+
+.textContent {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -16,13 +32,5 @@
     img {
         align-self: center;
     }
-
 }
 
-.postDetailContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
