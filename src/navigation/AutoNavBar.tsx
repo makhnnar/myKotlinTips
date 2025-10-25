@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { Box, List, ListItem, Link, Typography } from "@mui/material";
+
+// Import the new CSS file
 import "./autoNavBar.css";
 
 interface HeadingData {
@@ -8,28 +11,33 @@ interface HeadingData {
 }
 
 interface AutoNavbarProps {
-    markdown: string;
+  markdown: string;
 }
 
-const AutoNavbar = ({ markdown } : AutoNavbarProps) => {
+const AutoNavbar = ({ markdown }: AutoNavbarProps) => {
   const [headings, setHeadings] = useState<HeadingData[]>([]);
 
+  // This effect logic is unchanged.
   useEffect(() => {
     const headingElements = Array.from(
-      document.querySelectorAll(".postPage h1, .postPage h2, .postPage h3, .postPage h4, .postPage h5, .postPage h6")
+      document.querySelectorAll(
+        ".postPage h1, .postPage h2, .postPage h3, .postPage h4, .postPage h5, .postPage h6"
+      )
     ) as HTMLElement[];
 
-    const headingData: HeadingData[] = headingElements.map((heading: HTMLElement) => {
-      const generatedId = (heading.textContent || "")
-        .replace(/\s+/g, "-")
-        .toLowerCase();
+    const headingData: HeadingData[] = headingElements.map(
+      (heading: HTMLElement) => {
+        const generatedId = (heading.textContent || "")
+          .replace(/\s+/g, "-")
+          .toLowerCase();
 
-      return {
-        id: heading.id || generatedId,
-        text: heading.textContent,
-        level: heading.tagName,
-      };
-    });
+        return {
+          id: heading.id || generatedId,
+          text: heading.textContent,
+          level: heading.tagName,
+        };
+      }
+    );
 
     headingElements.forEach((heading: HTMLElement, index) => {
       if (!heading.id) {
@@ -39,33 +47,54 @@ const AutoNavbar = ({ markdown } : AutoNavbarProps) => {
 
     setHeadings(headingData);
   }, [markdown]);
-  
-  // Helper function remains to calculate the dynamic padding
+
+  // Helper function for DYNAMIC indentation (must stay in component)
   const getIndentation = (level: string): number => {
     const levelNumber = parseInt(level.slice(1), 10);
-    // Returns the number of pixels for padding
     return (levelNumber - 1) * 10;
   };
 
   return (
-    <nav className="auto-navbar">
-      <ul className="navbar-list">
+    <Box
+      component="nav"
+      // Apply the main class from the CSS file
+      className="auto-navbar"
+    >
+      <Typography
+        variant="h6" // Keep variant for semantics
+        component="h2"
+        // Apply the title class
+        className="auto-navbar-title"
+      >
+        On this page
+      </Typography>
+
+      <List
+        // Apply the list class
+        className="auto-navbar-list"
+      >
         {headings.map((heading) => (
-          <li key={heading.id} className="navbar-item">
-            <a
+          <ListItem
+            key={heading.id}
+            disablePadding
+            // Apply the item class
+            className="auto-navbar-item"
+            // DYNAMIC style: This cannot go in the CSS file
+            style={{
+              paddingLeft: `${getIndentation(heading.level)}px`,
+            }}
+          >
+            <Link
               href={`#${heading.id}`}
-              className={`navbar-link level-${heading.level}`} // Added dynamic class for styling based on level
-              style={{ 
-                // ONLY keep the necessary dynamic style here
-                paddingLeft: `${getIndentation(heading.level)}px`,
-              }}
+              // Apply the base link class AND the dynamic level class
+              className={`auto-navbar-link level-${heading.level}`}
             >
               {heading.text}
-            </a>
-          </li>
+            </Link>
+          </ListItem>
         ))}
-      </ul>
-    </nav>
+      </List>
+    </Box>
   );
 };
 
