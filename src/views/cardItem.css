@@ -30,11 +30,10 @@
 
 .horizontal-card-content {
     flex-grow: 1;
+    flex-direction: column;
     padding-bottom: 0 !important;
 }
 
 .horizontal-card-description {
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
 }
