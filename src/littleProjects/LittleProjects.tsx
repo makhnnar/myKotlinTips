@@ -1,6 +1,6 @@
-import { examples } from "../posts/repo/postRepo";
 import { CardItem } from "../views/CardItem";
 import { RedirectionButton } from "../views/RedirectionButton";
+import { examples } from "./ProjectsRepo";
 
 export const LittleProjects = () => {
     return <div className="homePostContainer">
