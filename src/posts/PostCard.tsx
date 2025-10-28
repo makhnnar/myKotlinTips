@@ -17,13 +17,11 @@ interface PostCardProps {
     title: string;
     description: string;
     imageUrl: string;
-    postId: string; // Unique identifier for the post
+    route: string; // Unique identifier for the post
 }
 
-export const PostCard = ({ title, description, imageUrl,postId }:PostCardProps) => {
-    const postDetailPath = `/post/${postId}`;
-    return (
-    <Card className="horizontal-card-root">
+export const PostCard = ({ title, description, imageUrl, route }:PostCardProps) => {
+  return <Card className="horizontal-card-root">
       <CardMedia
         component="img"
         className="horizontal-card-media"
@@ -52,14 +50,13 @@ export const PostCard = ({ title, description, imageUrl,postId }:PostCardProps) 
             variant="contained" 
             endIcon={<ArrowForwardIcon />}
             component={Link} 
-            to={postDetailPath} 
+            to={route} 
           >
             Watch More
           </Button>
         </CardActions>
       </Box>
-    </Card>
-  );
+  </Card>;
 };
 
 

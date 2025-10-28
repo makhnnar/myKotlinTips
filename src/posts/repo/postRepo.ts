@@ -14,14 +14,23 @@ const softEng = {
     title: "How I Became a Software Engineer",
     description: "A short story about my journey into software engineering, the challenges I faced, and all the people that helps to it.",
     imageUrl: "/logo192.png",
-    postId: "how-i-became"
+    route: "/post/how-i-became"
 };
 
 const goodPracts = {
     title: "Good Development Practices",
     description: "Things that I've learned over the years that can help you become a better sofware engineer.",
     imageUrl: "/logo192.png",
-    postId: "good-dev-practices"
+    route: "/post/good-dev-practices"
 };
 
 export const posts = [softEng, goodPracts, softEng];
+
+export const examples = [
+    {
+        title: "Google link",  
+        description: "A brief profile about me, my skills and experiences.",
+        imageUrl: "/logo192.png",
+        route: "https://www.google.com"
+    }
+];
