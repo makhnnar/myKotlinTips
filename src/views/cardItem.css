@@ -7,6 +7,7 @@
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); /* A mild initial shadow (MUI's default shadow: 2) */
     transition: all 0.3s ease-in-out;
     margin: 20px auto; 
+    flex-direction: row;
 }
 
 .horizontal-card-root:hover {
@@ -17,14 +18,14 @@
 }
 
 .horizontal-card-media {
-    width: 50px;
+    flex: 1;
     flex-shrink: 2;
 }
 
 .horizontal-card-content-box {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .horizontal-card-content {

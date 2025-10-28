@@ -26,21 +26,21 @@ export const CardItem = ({ title, description, imageUrl, children }:CardItemProp
             alt={title}
         />
         <Box className="horizontal-card-content-box">
-                <CardContent className="horizontal-card-content">
-                    <Typography component="div" variant="h5" gutterBottom>
-                        {title}
-                    </Typography>
-                    <Typography 
-                        variant="body2" 
-                        color="text.secondary"
-                        className="horizontal-card-description"
-                    >
-                        {description}
-                    </Typography>
-                </CardContent>        
-                <CardActions>
-                    {children}
-                </CardActions>
+            <CardContent className="horizontal-card-content">
+                <Typography component="div" variant="h5" gutterBottom>
+                    {title}
+                </Typography>
+                <Typography 
+                    variant="body2" 
+                    color="text.secondary"
+                    className="horizontal-card-description"
+                >
+                    {description}
+                </Typography>
+            </CardContent>        
+            <CardActions>
+                {children}
+            </CardActions>
         </Box>
     </Card>;
 };
