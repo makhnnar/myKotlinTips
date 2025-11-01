@@ -1,9 +1,9 @@
 
-import post1 from "./how-i-became.md";
+import post1 from "./howibecame.md";
 import profile from "./profile.md";
-import post2 from "./good-dev-practices.md";
-import post3 from "./declarative-ui-android.md";
-import post4 from "./hiring-experiences.md";
+import post2 from "./gooddevpractices.md";
+import post3 from "./declarativeuiandroid.md";
+import post4 from "./hiringexperiences.md";
 
 export const postsMap: Record<string, string> = {
     "how-i-became": post1,
@@ -11,7 +11,6 @@ export const postsMap: Record<string, string> = {
     "good-dev-practices": post2,
     "declarative-ui-android": post3,
     "hiring-experiences": post4,
-    // Add more posts here as needed
 };
 
 const softEng = {
