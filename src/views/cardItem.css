@@ -19,7 +19,7 @@
 
 .horizontal-card-media {
     flex: 1;
-    flex-shrink: 2;
+    aspect-ratio:  3/2;
 }
 
 .horizontal-card-content-box {

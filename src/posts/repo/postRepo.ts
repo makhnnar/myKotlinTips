@@ -16,28 +16,28 @@ export const postsMap: Record<string, string> = {
 const softEng = {
     title: "How I Became a Software Engineer",
     description: "A short story about my journey into software engineering, the challenges I faced, and all the people that helps to it.",
-    imageUrl: "/logo192.png",
+    imageUrl: "/softwareengineer.jpg",
     route: "/post/how-i-became"
 };
 
 const goodPracts = {
     title: "Good Development Practices",
     description: "Things that I've learned over the years that can help you become a better sofware engineer.",
-    imageUrl: "/logo192.png",
+    imageUrl: "/runners.jpg",
     route: "/post/good-dev-practices"
 };
 
 const declarativeUI = {
     title: "Declarative UI in Android",
     description: "An introduction to declarative UI in Android using Jetpack Compose.",
-    imageUrl: "/logo192.png",
+    imageUrl: "/declarativeui.png",
     route: "/post/declarative-ui-android"
 };
 
 const hiringExp = {
     title: "My Hiring Experiences",
     description: "Sharing my experiences during the hiring process, including interviews and assessments.",
-    imageUrl: "/logo192.png",
+    imageUrl: "/jobinterview.jpg",
     route: "/post/hiring-experiences"
 };
 

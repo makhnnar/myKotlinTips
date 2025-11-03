@@ -15,6 +15,7 @@ interface PostContentProps {
 }
 
 export const PostContent = ({ id }: PostContentProps) => {
+  window.scrollTo(0, 0);
   const markdownContent = PostReader(id || ""); 
   return <div className="postDetailContainer">
     <div className="postPage">
