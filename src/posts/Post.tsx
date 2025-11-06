@@ -23,6 +23,8 @@ export const PostContent = ({ id }: PostContentProps) => {
         <ReactMarkdown children={markdownContent} />
       </div>
     </div>
-    <AutoNavbar markdown={markdownContent}/>
+    <div className="rightNavBar">
+      <AutoNavbar markdown={markdownContent}/>
+    </div>
   </div>
 }

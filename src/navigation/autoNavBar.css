@@ -93,3 +93,14 @@
 .auto-navbar-link.level-H2.MuiLink-root {
   font-weight: 500;
 }
+
+@media (max-width: 600px) {
+  .auto-navbar {
+    
+    width: 0%;
+    max-height: none;
+    border-left: none;
+    box-shadow: none;
+    padding: 0px;
+  }
+}
